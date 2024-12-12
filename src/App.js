@@ -8,6 +8,8 @@ import Home from "./components/Home";
 import AnalyticsPage from "./components/AnalyticsPage";
 import TimeSimulation from "./components/TimeSimulation";
 import ForecastVisualization from './components/ForecastVisualization';
+import YearSelection from './components/YearSelection';
+import DateSelection from './components/DateSelection';
 
 const App = () => {
   return ( 
@@ -19,8 +21,10 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/map" element={<Map />} />
         <Route path="/TimeSimulation" element={<TimeSimulation />} />
+        <Route path="/year-selection" element={<YearSelection />} />
         <Route path="/Analytics" element={<AnalyticsPage />} />
         <Route path="/forecast-visualization" element={<ForecastVisualization />} />
+        <Route path="/date-selection" element={<DateSelection />} />
       </Routes>
     </Router>
   );
